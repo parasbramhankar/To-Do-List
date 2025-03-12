@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>To-Do List App</title>
+</head>
+<body>
+  <div class="container">
+    <h1 id="heading">To-Do List</h1>
+    <label for="input">Task Name:</label>
+    <input type="text" id="taskName" class="task-name-input" placeholder="Enter task name" />
+    <input type="date" id="taskDate" class="task-input"/>
+    <input type="time" id="taskTime" class="task-input" />
+    <button id="addTaskButton" class="btn addbtn" onclick="addTask()">Add Task</button>
+ 
+    <div class="tabs">
+      <button id="allTasksButton" class="tab-button" onclick="filterTasks('all')">All Tasks</button>
+      <button id="remainingTasksButton" class="tab-button" onclick="filterTasks('none')">Remaining Tasks</button>
+      <button id="completedTasksButton" class="tab-button" onclick="filterTasks('true')">Completed Tasks</button>
+      <button id="missingTasksButton" class="tab-button" onclick="filterTasks('false')">Missing Tasks</button>
+    </div>
+
+    <table id="taskTable">
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th>Task Name</th>
+          <th>Start Time</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <button id="clearTasksButton" class="btn clearbtn" onclick="clearTasks()">Clear Tasks</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+.container {
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#heading {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.task-name-input{
+  display:block;
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+}
+
+.task-input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 14px;
+  margin: 5px;
+  font-size: 13px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20PX;
+}
+
+.btn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin: 5px;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2E5984;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.clearbtn:hover{
+  background-color: #1d5162;;
+}
+.addbtn:hover{
+  background-color: #1d5162;;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab-button{
+  background-color: #2E5984;
+  color: white;
+  border: none;
+  font-size:14px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.tab-button:hover {
+  background-color: #BCD2E8;
+  color: rgb(2, 2, 2);
+}
+
+#taskTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+#taskTable td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+#taskTable th {
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  padding: 8px;
+  text-align: center;
+}
+.edit-del-btn{
+  padding: 8px;
+  margin: 5px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.edit-del-btn:hover{
+  background-color: #907171;
+}
+.delete-color {
+  background-color: #ac0e0e;
+ }
+.edit-color {
+  background-color: #2196F3;
+}
+.strike {
+  text-decoration: line-through;
+}
+.missing {
+  color: rgb(245, 7, 7);
+}
